@@ -86,6 +86,7 @@ function startFlashing() {
 function stopFlashing() {
   clearInterval(intervalId);
   intervalId = null;
+  controlPanel.classList.remove("hidden");
 }
 
 timerButton.addEventListener("click", startFlashing);
